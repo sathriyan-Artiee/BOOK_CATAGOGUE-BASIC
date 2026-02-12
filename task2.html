@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WALKERS bookS</title>
+  <style>
+    .head{
+      background-color: rgb(23, 128, 170);
+      color:white;
+      padding:15px;
+      display:flex;
+      width:100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .bar{
+      margin-left:30px;
+      margin-right: 40px;
+      cursor:pointer;
+    }
+    .bar span{
+      margin:20px;
+    }
+    .content{
+      background-image: url(https://tse1.mm.bing.net/th/id/OIP.gzKiEq_-l72lk9mdlc__JQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3);
+      min-height: 100vh;
+      background-size: cover;
+    }
+    .book-table{
+      width:80%;
+      margin:20px auto;
+      border-color: white;
+      border-width: 3px;
+      border-style:solid;
+      border-collapse:collapse;
+      background-color: rgba(173, 208, 237, 0.955);
+      
+      
+    }
+    th,td{
+      padding:15px 25px;
+      text-align: center;
+      font-size: 20px;
+      border:3px solid white;
+
+    }
+    tr{
+      height:auto;
+    }
+    button{
+      background-color: rosybrown;
+      border-radius: 20px;
+    }
+    button.hover{
+      background-color: brown;
+
+    }
+    button.active{
+      background-color:blueviolet;
+    }
+    .search-box  input{
+      margin-left: 10px;
+      
+    }
+    .underbar{
+      margin-right:10px;
+      float:right;
+    }
+    .cart{
+      
+    }
+  
+
+  </style>
+</head>
+<body>
+<div class="head">
+  <h1 >WALKERS books </h1>
+
+  <div style="float:right" class="bar">
+  <h3>
+    <span >new|</span>
+    <span>antic|</span>
+    <span class="search-box">search
+      <input type="text" placeholder="search books..."> </span>
+  </h3>
+  </div>
+</div>   
+<div class="content">
+<table class="book-table" >
+  <caption style="font-size:50px; font-family: 'Times New Roman', Times, serif;">CATALOGUE</caption>
+  <tr>
+     <th>book</th>
+    <th>author</th>
+    <th>price</th>
+    <th>buy/cart</th>
+  </tr>
+  <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61OByUf1TfL._SL1275_.jpg" width="100px" height="100px"> <br>
+    <i>the morning</i></td>
+      
+    <td>John Smith</td>
+    <td>$12.99</td>
+    <td><button><a href="https://www.amazon.in/Anxious-Overthinking-Present-Transform-Superpower/dp/936411910X/ref=pd_sbs_d_sccl_2_6/259-8178424-2847906?pd_rd_w=k5opE&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=PW92F1VQEF6GJDF5ZKAP&pd_rd_wg=pQtZI&pd_rd_r=370d25e9-d2d9-47f1-a8e8-40b663b5f5c8&pd_rd_i=936411910X&psc=1">buy</a></button><button class="cart" onclick="alert('added')">add to cart</button></td>
+  </tr>
+  <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61cvUtcU8TL._SY466_.jpg" width="100px" height="100px"> <br>
+    
+    <i>the evening</i></td>
+    <td>Jane Doe</td>
+    <td>$15.99</td>
+    <td><button><a href="https://www.amazon.in/Anxious-Overthinking-Present-Transform-Superpower/dp/936411910X/ref=pd_sbs_d_sccl_2_6/259-8178424-2847906?pd_rd_w=k5opE&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=PW92F1VQEF6GJDF5ZKAP&pd_rd_wg=pQtZI&pd_rd_r=370d25e9-d2d9-47f1-a8e8-40b663b5f5c8&pd_rd_i=936411910X&psc=1">buy</a></button><button class="cart" onclick="alert('added')" >add to cart</button></td> 
+    </tr>
+    <tr>
+      <td><img src="https://m.media-amazon.com/images/I/41a4WQdhrdL._SY445_SX342_FMwebp_.jpg" width="100px" height="100px"> <br>
+      <i>the night</i></td>
+      <td>Emily Johnson</td>
+      <td>$9.99</td>  
+      <td><button><a href="https://www.amazon.in/Anxious-Overthinking-Present-Transform-Superpower/dp/936411910X/ref=pd_sbs_d_sccl_2_6/259-8178424-2847906?pd_rd_w=k5opE&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=PW92F1VQEF6GJDF5ZKAP&pd_rd_wg=pQtZI&pd_rd_r=370d25e9-d2d9-47f1-a8e8-40b663b5f5c8&pd_rd_i=936411910X&psc=1">buy</a></button><button class="cart" onclick="alert('added')">add to cart</button></td>
+    </tr>
+    <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61cvUtcU8TL._SY466_.jpg" width="100px" height="100px"> <br>
+    
+    <i>the evening</i></td>
+    <td>Jane Doe</td>
+    <td>$15.99</td>
+    <td><button><a href="https://www.amazon.in/Anxious-Overthinking-Present-Transform-Superpower/dp/936411910X/ref=pd_sbs_d_sccl_2_6/259-8178424-2847906?pd_rd_w=k5opE&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=PW92F1VQEF6GJDF5ZKAP&pd_rd_wg=pQtZI&pd_rd_r=370d25e9-d2d9-47f1-a8e8-40b663b5f5c8&pd_rd_i=936411910X&psc=1">buy</a></button><button class="cart" onclick="alert('added')">add to cart</button></td>
+    </tr>
+    <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61cvUtcU8TL._SY466_.jpg" width="100px" height="100px"> <br>
+    
+    <i>the evening</i></td>
+    <td>Jane Doe</td>
+    <td>$15.99</td>
+    <td><button ><a href="https://www.amazon.in/Anxious-Overthinking-Present-Transform-Superpower/dp/936411910X/ref=pd_sbs_d_sccl_2_6/259-8178424-2847906?pd_rd_w=k5opE&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=PW92F1VQEF6GJDF5ZKAP&pd_rd_wg=pQtZI&pd_rd_r=370d25e9-d2d9-47f1-a8e8-40b663b5f5c8&pd_rd_i=936411910X&psc=1">buy</a></button><button class="cart" onclick="alert('added')">add to cart</button></td>
+    </tr>
+</table>
+</div> 
+
+<center><h3 style="color:rgb(36, 19, 167); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">AUTHORIZED BOOKS ON YOUR HAND</h3>
+<h3 class="underbar">
+  <span href="">contact us |</span>
+  <span>about us</span>
+</h3>
+
+ 
+
+
+
+  
+</body>
+</html>
